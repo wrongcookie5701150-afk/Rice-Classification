@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-bright": "#f8faf3",
+              "surface-container-low": "#f2f4ed",
+              "tertiary-fixed-dim": "#acd290",
+              "on-tertiary-fixed": "#0a2100",
+              "on-secondary-fixed-variant": "#584400",
+              "surface-container-lowest": "#ffffff",
+              "surface-dim": "#d9dbd4",
+              "surface-container-high": "#e7e9e2",
+              "primary-fixed": "#bcf290",
+              "surface-variant": "#e1e3dc",
+              "inverse-on-surface": "#eff2eb",
+              "secondary-fixed": "#ffe08f",
+              "tertiary-fixed": "#c7eeaa",
+              "on-tertiary-container": "#f9ffed",
+              "on-tertiary": "#ffffff",
+              "background": "#f8faf3",
+              "surface-container": "#edefe8",
+              "primary": "#3a6716",
+              "secondary": "#755b00",
+              "tertiary-container": "#5c7e45",
+              "on-secondary-container": "#785d00",
+              "primary-container": "#52812d",
+              "on-surface": "#191c18",
+              "outline": "#73796a",
+              "secondary-fixed-dim": "#e6c361",
+              "secondary-container": "#fed975",
+              "on-primary": "#ffffff",
+              "error": "#ba1a1a",
+              "surface-container-highest": "#e1e3dc",
+              "on-secondary": "#ffffff",
+              "surface-tint": "#3c6a18",
+              "inverse-surface": "#2e312d",
+              "tertiary": "#44652f",
+              "on-primary-fixed-variant": "#265100",
+              "on-tertiary-fixed-variant": "#304f1b",
+              "inverse-primary": "#a1d577",
+              "outline-variant": "#c2c9b7",
+              "on-error-container": "#93000a",
+              "on-primary-container": "#f9ffec",
+              "on-primary-fixed": "#0b2000",
+              "on-secondary-fixed": "#241a00",
+              "on-surface-variant": "#42493b",
+              "on-error": "#ffffff",
+              "surface": "#f8faf3",
+              "primary-fixed-dim": "#a1d577",
+              "on-background": "#191c18",
+              "error-container": "#ffdad6"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Public Sans"],
+              "label": ["Public Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#f8faf3] dark:bg-stone-950">
+<div class="flex justify-between items-center px-8 py-6 max-w-7xl mx-auto w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#5d8d38] text-3xl" data-icon="biotech">biotech</span>
+<h1 class="text-2xl font-black text-[#191c18] dark:text-[#e7e9e2] font-headline tracking-tight">The Digital Agronomist</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8 font-headline tracking-tight font-semibold">
+<a class="text-[#5d8d38] border-b-2 border-[#5d8d38] pb-1 transition-colors duration-300" href="#">Home</a>
+<a class="text-[#191c18] opacity-70 hover:text-[#5d8d38] transition-colors duration-300" href="#">Analysis</a>
+<a class="text-[#191c18] opacity-70 hover:text-[#5d8d38] transition-colors duration-300" href="#">Archive</a>
+</nav>
+<button class="md:hidden">
+<span class="material-symbols-outlined text-on-surface" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<main class="pt-32 pb-20 px-6 max-w-7xl mx-auto">
+<!-- Hero Section / Editorial Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left: About Us (The Editorial Column) -->
+<div class="lg:col-span-5 space-y-8 lg:pr-12">
+<div class="inline-block px-4 py-1.5 bg-secondary-container rounded-full text-on-secondary-container text-xs font-label tracking-widest font-bold">
+                    PRECISION AGRICULTURE
+                </div>
+<h2 class="text-5xl font-headline font-extrabold text-on-surface leading-[1.1] tracking-tighter">
+                    Decoding the DNA of <span class="text-primary italic">Every Grain.</span>
+</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed font-light">
+                    The Digital Agronomist project merges high-resolution computer vision with deep botanical expertise. Our neural networks are trained to distinguish subtle phenotypic variations in rice cultivars, ensuring global food quality standards and scientific transparency.
+                </p>
+<div class="flex items-center gap-6 pt-4">
+<div class="flex flex-col">
+<span class="text-3xl font-headline font-bold text-primary">99.8%</span>
+<span class="text-xs font-label uppercase tracking-widest opacity-60">Classification Accuracy</span>
+</div>
+<div class="w-px h-10 bg-outline-variant opacity-20"></div>
+<div class="flex flex-col">
+<span class="text-3xl font-headline font-bold text-primary">42+</span>
+<span class="text-xs font-label uppercase tracking-widest opacity-60">Rice Varieties</span>
+</div>
+</div>
+</div>
+<!-- Right: Image Upload Section (The Analysis Terminal) -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-low rounded-[2rem] p-4 lg:p-8 relative overflow-hidden group">
+<!-- Subtle background decoration -->
+<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -left-24 w-64 h-64 bg-secondary-container/10 rounded-full blur-3xl"></div>
+<div class="relative bg-surface-container-lowest border-2 border-dashed border-outline-variant/30 rounded-[1.5rem] p-8 lg:p-16 flex flex-col items-center justify-center text-center transition-all duration-300 hover:border-primary/40 group-hover:shadow-xl">
+<div class="w-20 h-20 bg-surface-container-high rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="cloud_upload">cloud_upload</span>
+</div>
+<h3 class="text-2xl font-headline font-bold mb-2">Analyze Your Sample</h3>
+<p class="text-on-surface-variant mb-8 max-w-sm">
+                            Drag and drop high-resolution images of single or multiple grains. Supported: PNG, JPG, HEIC.
+                        </p>
+<div class="flex flex-wrap justify-center gap-4">
+<button class="px-8 py-4 bg-primary text-on-primary rounded-full font-headline font-bold flex items-center gap-2 hover:bg-primary-container transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="add_a_photo">add_a_photo</span>
+                                Select Grain Image
+                            </button>
+<button class="px-8 py-4 bg-surface-container-highest text-on-surface rounded-full font-headline font-bold hover:bg-surface-variant transition-all">
+                                Open Camera
+                            </button>
+</div>
+<div class="mt-10 flex items-center gap-4 py-3 px-6 bg-surface-container-low rounded-xl text-sm font-medium">
+<span class="material-symbols-outlined text-secondary" data-icon="info">info</span>
+<span>Optimal results achieved with flat, neutral lighting.</span>
+</div>
+</div>
+</div>
+<!-- Secondary Data Visualization Bento Grid -->
+<div class="grid grid-cols-2 gap-4 mt-6">
+<div class="bg-surface-container-high p-6 rounded-[1.5rem]">
+<span class="material-symbols-outlined text-primary mb-3" data-icon="center_focus_weak">center_focus_weak</span>
+<h4 class="font-headline font-bold text-sm">Morphology</h4>
+<p class="text-xs text-on-surface-variant mt-1">Real-time geometric edge detection.</p>
+</div>
+<div class="bg-[#fed975] p-6 rounded-[1.5rem]">
+<span class="material-symbols-outlined text-secondary mb-3" data-icon="palette">palette</span>
+<h4 class="font-headline font-bold text-sm">Colorimetric</h4>
+<p class="text-xs text-on-secondary-fixed-variant mt-1">Precise RGB/LAB value extraction.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Grains (Asymmetric Horizontal Scroll) -->
+<section class="mt-32">
+<h2 class="text-3xl font-headline font-bold mb-10 flex items-center gap-4">
+                Global Varieties 
+                <span class="h-px flex-1 bg-outline-variant opacity-20"></span>
+</h2>
+<div class="flex overflow-x-auto pb-8 gap-6 no-scrollbar snap-x">
+<!-- Card 1 -->
+<div class="min-w-[300px] snap-start">
+<div class="h-80 w-full rounded-3xl overflow-hidden mb-4 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Macro close-up of premium jasmine rice grains on a rustic wooden surface with soft natural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBe-6BlPv_WoqIko5_l30a_ItJk-5hfKxnrF7JCJqt--1HV2Ma8GTzOg8uc95V48AmCm1LnDuCnSAQE0lL3oL-4hG-OlGAwPySsBGuiW42sQFMflhjy5-1-o9XV-0NK6QJI96nMSsm44eKIN5lf6M5M89lqhpmaeYW7Fmq9R4oieQJGCqCbVPgc-mtrhjLoMPyaVHxbsTqXrMoKgYiuzsmx6xqjU6EUO6gMvDEdCRnp7235bb4v0SY3Hd5SsDUQIWjE7aGjDzOI_5cz"/>
+</div>
+<div class="px-2">
+<span class="text-[10px] font-label font-black tracking-widest text-primary uppercase">Long Grain</span>
+<h3 class="text-xl font-headline font-bold">Jasmine AAA</h3>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="min-w-[300px] snap-start">
+<div class="h-80 w-full rounded-3xl overflow-hidden mb-4 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Top view of basmati rice grains showing their characteristic long and slender shape on a dark slate background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQ8VRw5PX4w8Gp-IIleb9iM2UZ-ekZNFbxbm6Ey9k0kz9CtFX3jNaxINUcX4qsHFwZL0qlx86fNgsKDC_8xxFbtZK0cEoXcl0-25Kjoh1NBb_moaR53bF7g-5RS7yPvtu2T79qp2vKsumzsHCazwds2kIg3kYQLstdqdRNInMym87uBAhqHGxed6EarucFOqhgPT-XvRi1-__o973MmClluB7_RKkvsTI3H1EWXSQchqscsSe-lsPWB1pOX9hdUml5j5Gqxf7Xq1Rz"/>
+</div>
+<div class="px-2">
+<span class="text-[10px] font-label font-black tracking-widest text-primary uppercase">Extra Long</span>
+<h3 class="text-xl font-headline font-bold">Himalayan Basmati</h3>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="min-w-[300px] snap-start">
+<div class="h-80 w-full rounded-3xl overflow-hidden mb-4 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Close up of short grain arborio rice used for risotto with a pearly white texture and rounded shape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxugBQj5VMlm6rV4TChcitE2xFtftGc32Eqzynk23O_WuPL26pe00T0_OKrewXuVtYdD_Bk2aZu8k-uCq42pZjksLMIudLM_wEUxJrWZUjzWiDKnLSluiSYV6vEfu03FCwNClEUIgvg6a0R-Zq9_DtkJI4kDh8xhQ3QdgF2hrRT72rZ5dmqhc624ddOpg4486JWwFXq2w47zfOJRIqpEK41ZjDUg7p33-fXz1X_laYh7ixTweH4M_4N9tvmviHJz-zJTkBrxzcNZR8"/>
+</div>
+<div class="px-2">
+<span class="text-[10px] font-label font-black tracking-widest text-primary uppercase">Short Grain</span>
+<h3 class="text-xl font-headline font-bold">Arborio Riserva</h3>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f2f4ed] dark:bg-stone-900 rounded-t-[2rem] mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full max-w-7xl mx-auto gap-8">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="eco">eco</span>
+<span class="text-lg font-bold text-[#191c18] font-headline">The Digital Agronomist</span>
+</div>
+<p class="font-body text-sm tracking-wide opacity-60">© 2024 The Digital Agronomist. Precision through Breathability.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-body text-sm tracking-wide">
+<a class="text-[#191c18] opacity-60 hover:underline decoration-[#fcd773] decoration-2 underline-offset-4 transition-all ease-in-out" href="#">Scientific Journal</a>
+<a class="text-[#191c18] opacity-60 hover:underline decoration-[#fcd773] decoration-2 underline-offset-4 transition-all ease-in-out" href="#">Classification Methodology</a>
+<a class="text-[#191c18] opacity-60 hover:underline decoration-[#fcd773] decoration-2 underline-offset-4 transition-all ease-in-out font-bold" href="#">Contact Agronomist</a>
+</div>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="alternate_email">alternate_email</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary hover:bg-secondary-container transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="distance">distance</span>
+</a>
+</div>
+</div>
+</footer>
+<!-- Bottom Navigation (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-surface-container-lowest flex justify-around items-center py-4 z-50 rounded-t-3xl shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 opacity-50">
+<span class="material-symbols-outlined" data-icon="biotech">biotech</span>
+<span class="text-[10px]">Analyze</span>
+</button>
+<button class="flex flex-col items-center gap-1 opacity-50">
+<span class="material-symbols-outlined" data-icon="history">history</span>
+<span class="text-[10px]">History</span>
+</button>
+<button class="flex flex-col items-center gap-1 opacity-50">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-[10px]">Account</span>
+</button>
+</nav>
+</body></html>
